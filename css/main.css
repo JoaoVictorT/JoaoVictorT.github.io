@@ -637,13 +637,13 @@ footer{
 
 @media only screen and (max-width: 480px) {
     .foto_perfil{
-        width:30%;
+        width:40%;
         height: 60%;
     }
     
     .section_dados_principal{
-        width: 90vw;
-        height: 55vh;    
+        width: 100vw;
+        height: 60vh;    
     }
 
     .div_titulo_objetivo_profissional{
@@ -651,11 +651,11 @@ footer{
         height: 45%;  
     }
     .div_dados_foto_objetivo{
-        width: 90vw;
+        width: 100vw;
         height: 40vh;
     }
     .div_sobremim{
-        width: 90vw;
+        width: 100vw;
         height: 40vh;
     }
     .paragrafo_objetivo, .p_sobremim{
@@ -672,15 +672,17 @@ footer{
         height: 55%;
     }
     .section_conhecimentos{
-        width: 90vw;
+        width: 100vw;
         height: 140vh;
+        display: flex;
+        justify-content: center;
     }
     .container_div_conhecimentos{
-        width: 90vw;
+        width: 100vw;
         height: 100vh;
     }
     .div_formacao_academica, .div_experiencias_profissionais,  .div_habilidades, .div_idiomas, .div_cursos{
-        width: 42vw;
+        width: 47vw;
         height: 45vh;     
     }
     .h2_formacao{
@@ -708,7 +710,7 @@ footer{
         height: 25px;
     }
     .section_atividades{
-        width: 95vw;
+        width: 100vw;
         display: flex;
         align-items: center;
     }
@@ -734,11 +736,11 @@ footer{
         width: 45%;
     }
     .imagem_dos_projetos{
-        width: 50%;
-        height: 70%;
+        width: 60%;
+        height: 60%;
     }
     .titulo_projetos{
-        font-size: 1.8vh;
+        font-size: 1.3vh;
     }
     .footer{
         height: 5vh;
