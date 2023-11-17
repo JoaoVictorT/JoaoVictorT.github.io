@@ -760,4 +760,7 @@ footer{
         height: 30px;
         margin: 15px 0 0 15px;
     }
+    .div_dados_foto_objetivo{
+        border-radius: 0px;
+    }
 }
