@@ -756,8 +756,8 @@ footer{
         width: 100%;
     }
     .icone_nome, .icone_cidade, .icone_celular, .icone_email, .icone_github, .icone_linkedin{
-        width: 3.5vw;
-        height: 3.5vh;
+        width: 30px;
+        height: 30px;
         margin: 15px 0 0 15px;
     }
 }
