@@ -763,4 +763,103 @@ footer{
     .div_dados_foto_objetivo{
         border-radius: 0px;
     }
+    @media only screen and (max-width: 300px) {
+        .section_dados_principal{
+            height: 85vh;
+        }
+        .div_dados_foto_objetivo{
+            flex-direction: column;
+            align-items: center;
+        }
+        .h1_dados{
+            height: 55%;
+        }
+        .div_formacao_academica, .div_experiencias_profissionais,  .div_habilidades, .div_idiomas, .div_cursos{
+            width: 90vw;
+            height: 45vh;     
+        }
+        .section_conhecimentos{
+            height: 230vh;
+        }
+        .h2_formacao {
+            font-size: 1.8vh;
+        }
+        .lista_ensino{
+            font-size: 18px;
+        }
+        .paragrafo_formacao{
+            font-size: 16px;
+        }
+        .hr_verde{
+            width: 20px;
+            height: 6px;
+            background-color: rgb(1, 198, 1);
+            margin: 0 0 0 15px;
+            border: 0;
+            border-radius: 5px;
+        }
+        .hr_cinza{
+            width: 20px;
+            height: 6px;
+            background-color: #c3c3c3;
+            margin: 0 0 0 15px;
+            border: 0;
+            border-radius: 5px;
+        
+        }
+        .img_habilidades, .img_idiomas{
+            width: 35px;
+            height: 35px;
+        }
+        .section_atividades{
+            width: 140vw;
+            display: flex;
+            align-items: center;
+        }
+        .projetos_parte1{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .projetos_parte2{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .teste{
+            width: 60%;
+            height: 50%;
+        }
+        .imagem_dos_projetos{
+            width: 70%;
+            height: 70%;
+        }
+        .titulo_projetos{
+            font-size: 1.3vh;
+        }
+        .div_ul{
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .ul_footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .icone_nome, .icone_cidade, .icone_celular, .icone_email, .icone_github, .icone_linkedin{
+            width: 30px;
+            height: 30px;
+            margin: 15px 0 0 15px;
+        }
+        .texto_back{
+            font-size: 16px;
+        }
+        .div_icn_back{
+            width: 100%;
+            height: 20%;
+        }
+    }
 }
