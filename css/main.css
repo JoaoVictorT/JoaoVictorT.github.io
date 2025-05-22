@@ -10,20 +10,33 @@ body{
     transition: 0.5s;
     
 }
-.foto_perfil{
-    margin: 15px 0 0 15px;
-    width:20%;
-    height: 75%;
-    border-radius: 10px;
-}
-.section_dados_principal{
+.section_dados_principal {
     display: flex;
-    width: 50vw;
-    height: 40vh;
-    flex-direction: column;
-    
-    
-}
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    gap: 100px;
+  }
+  
+  .foto_perfil img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .redes_sociais {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  .redes_sociais a {
+    color: var(--cor-destaque);
+    margin: 0 10px;
+  }
 .div_dados_foto_objetivo{
     display: flex;
     width: 50vw;
@@ -112,758 +125,207 @@ a, a:visited, a:active{
 .fa-xl{
     padding: 0 0 0 15px;
 }
-.section_conhecimentos{
-    display: flex;
-    width: 50vw;
-    height: 75vh;
-    flex-direction: row;
-}
-.container_div_conhecimentos{
-    margin: 10px 0 0 0;
-    display: flex;
-    width: 50vw;
-    height: 30vh;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 10px 0 0 10px;
-
-}
- .div_habilidades, .div_cursos, .div_idiomas{
-    width: 16vw;
-    height: 35vh;
-    border: 1px solid #000;
-    overflow: hidden;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-}
-.div_formacao_academica,  .div_experiencias_profissionais{
-    width: 16vw;
-    height: 35vh;
-    border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-}
-.h2_formacao{
-    margin: 0;
-    font-size:  2.36vh;
-    padding: 0 0 0 6px;
-    color: #fff;
-}
-.icone_formacao, .icone_experiencias, .icone_habilidades, .icone_cursos{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 0 10px 0;
-    border-bottom: #0098DB 2px solid;
-    background-color: #0098DB;
-    border-radius: 5px;
-
-}
-.fa-xl{
-    color: #fff;
-}
-.ul_formacao{
-    border-bottom: #000 2px solid;
-    
-}
-.informacao_formacao, .informacao_cursos{
-    display: flex;
-    flex-direction: column;
-}
-.lista_ensino{
-    font-size: 18px;
-    padding: 10px 0 0 0;
-    font-weight: bold;
-}
-.paragrafo_formacao {
-    font-size: 16px;
-    color: #7e7e7e;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 10px 0 10px 0;
-    list-style: none;
-}
-.paragrafo_formacao_nome{
-    font-size: 16px;
-    color: #7e7e7e;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 10px 0 10px 0;
-    list-style: none; 
-    color:rgb(1, 198, 1);
-}
-.div_habilidades::-webkit-scrollbar{
-    width: 12px;
+.section_dados_secundario {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
 }
 
-.div_habilidades::-webkit-scrollbar-thumb{
-    width: 5px;
-    background-color: #7e7e7e;
-    border-radius: 10px;
-    border: 3px solid #fafafa;
-}
-.div_idiomas::-webkit-scrollbar{
-    width: 12px;
-}
-
-.div_idiomas::-webkit-scrollbar-thumb{
-    width: 5px;
-    background-color: #7e7e7e;
-    border-radius: 10px;
-    border: 3px solid #fafafa;
-}
-.div_cursos::-webkit-scrollbar{
-    width: 12px;
+.titulo_dados_secundario {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 8px;
+  color: #000;
 }
 
-.div_cursos::-webkit-scrollbar-thumb{
-    width: 5px;
-    background-color: #7e7e7e;
-    border-radius: 10px;
-    border: 3px solid #fafafa;
-}
-.ul_lista{
-    
-    border-bottom: #000 2px solid;  
+.dados_container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.li_habilidades, .li_idiomas{
-    list-style: none;
-    padding: 0 0 15px 0;
-    display: flex;
-    align-items: center;
-}
-.img_habilidades, .img_idiomas{
-    width: 35px;
-    height: 35px;
-}
-.div_bandeira{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    
-}
-.ul_idiomas_bandeira{
-    display: inline-flex;
+.dados_secundario_card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 280px;
+  transition: transform 0.3s ease;
 }
 
-.ul_habilidades, .ul_idiomas_2{
-display: inline-flex;
-flex-direction: column;
-padding: 0 0 0 20px;
+.dados_secundario_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
 }
-.hr_verde{
-    width: 25px;
-    height: 6px;
-    background-color: rgb(1, 198, 1);
-    margin: 0 0 0 15px;
-    border: 0;
-    border-radius: 5px;
-}
-.hr_cinza{
-    width: 25px;
-    height: 6px;
-    background-color: #c3c3c3;
-    margin: 0 0 0 15px;
-    border: 0;
-    border-radius: 5px;
 
+.dados_secundario_card h3 {
+  margin-top: 0;
+  color: #000;
+  font-size: 1.25rem;
 }
-.ul_idiomas_bandeira{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
+
+.dados_secundario_card p,
+.dados_secundario_card ul {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.img_estados_unidos, .img_espanha{
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
+
+.dados_secundario_card li {
+  margin-bottom: 4px;
 }
-.titulo_atividades{
-    font-size: 26px;
-    border: 0;
-    border-bottom: #000 2px solid;
-}
-.img_csharp_jogo_da_forca, .img_c_fluxo_de_pessoas, .img_html_portfolio, .img_css_portfolio, .img_css_js_portifolio{
-    width: 40px;
-    height: 40px;
-}
-.section_atividades{
-    display: inline-flex;
-    width: 50vw;
-    height: 100vh;
-    flex-direction: column;
-}
-.div_titulo_atividades{
-    display: inline-flex;
-    width: 100%;
-    height: 20%;
-    justify-content: center;
-    align-items: center;
-    
-}
-.projetos_parte1{
-    width: 100%;
-    height: 39%;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    padding-bottom: 10px;
-}
-.projetos_parte2{
-    width: 100%;
-    height: 39%;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
-.teste{
-    width: 35%;
-    height: 100%;
-    border: 1px solid #000;
-    display: inline-flex;
-    flex-direction: column;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease-in;
-}
-.teste:hover {
-    transform: rotateY(180deg);
-}
-.imagens_projetos{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-}
-.imagem_dos_projetos{
-    width: 60%;
-    height: 80%;
-}
-.titulo_projetos{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    backface-visibility: hidden;
-}
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .section_atividades_cards {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
   }
-.texto_back{
-    font-size: 2.1vh;
-    padding: 2%;
-    height: 70%;
-}
-.div_icn_back{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    padding: 2%;
-    justify-content: center;
-}
-.icn_linguagem_back{
-    width: 15%;/*15*/
-    height: 60%;/*15*/
-}
-#id_icn_linkedin, #id_icn_github{
-    cursor: pointer;
-}
-
-footer{
-    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,152,219,1) 35%, rgba(0,212,255,1) 100%);
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 5vh;
-    flex-direction: column;
-
-}
-.div_ul_footer{
-    width: 30%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+  .section_atividades_cards h2{
+    font-size: 2rem;
     text-align: center;
-    color: #fff;
-}
-.div_ul{
-    width: 30%;
-    height: 60%;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 8px;
+    color: #000;
+  }
+    .section_dados_secundario h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 8px;
+    color: #000;
+  }
+  
+  .atividades_container {
     display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-}
-.ul_footer{
-    list-style: none;
-    width: 30%;
-    display: flex;
-    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
-}
-.li_footer{
-    cursor: pointer;
-}
+  }
+  
+  .atividade_card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 250px;
+    max-width: 280px;
+    transition: transform 0.3s ease;
+  }
+  
+  .atividade_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  }
+  
+  .atividade_card h3 {
+    margin-top: 0;
+    color: #000;
+    font-size: 1.25rem;
+  }
+  
+  .atividade_card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  .footer_minimalista {
+    background-color: #f9f9f9; /* fundo bem claro, quase branco */
+    color: #666666; /* texto cinza escuro suave */
+    padding: 15px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-top: 1px solid #ddd; /* linha sutil no topo do footer */
+  }
+  
+  .footer_content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer_content p {
+    margin: 0;
+    flex: 1 1 200px;
+  }
+  
+  .footer_links {
+    display: flex;
+    gap: 20px;
+    flex: 1 1 300px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .footer_links a {
+    color: #666666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer_links a:hover {
+    color: #333333; /* escurece no hover */
+  }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .foto_perfil{
-        width:30%;
-        height: 85%;
-    }
-    
-    .section_dados_principal{
-        width: 75vw;
-        height: 50vh;    
-    }
 
-    .div_titulo_objetivo_profissional{
-        width: 100%;
-        height: 45%;  
-    }
-    .div_dados_foto_objetivo{
-        width: 75vw;
-        height: 40vh;
-    }
-    .div_sobremim{
-        width: 75vw;
-        height: 40vh;
-    }
-    .paragrafo_objetivo, .p_sobremim{
-        font-size: 2vh;
-        margin-right: 15px;
 
-    }
-    .objetivo_profissional{
-        width: 70%;
-        height: 40%;
-    }
-    .h1_dados{
-        width: 30%;
-        height: 40%;  /*1.71*/
-    }
-    .section_conhecimentos{
-        width: 75vw;
-        height: 140vh;
-    }
-    .container_div_conhecimentos{
-        width: 75vw;
-        height: 30vh;
-    }
-    .div_formacao_academica, .div_experiencias_profissionais,  .div_habilidades, .div_idiomas, .div_cursos{
-        width: 35vw;
-        height: 45vh;
-        
-    }
-    .h2_formacao{
-        font-size:  2.3vh;
 
+@media (max-width: 768px) {
+    .section_dados_principal {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px;
     }
-    .section_atividades{
-        width: 75vw; /*50*/
-        height: 100vh;
+  
+    .foto_perfil img {
+      width: 150px;
     }
-    .teste{
-        width: 55%;
-        height: 100%;
-
+  
+    .info h1 {
+      font-size: 24px;
     }
-    .footer{
-        width: 100%;
-        height: 15vh;
+  
+    .info h2 {
+      font-size: 18px;
     }
-    .div_ul{
-        width: 50%;
-        height: 60%;
-    }
-    .div_ul_footer{
-        width: 50%;
-        height: 40%;
-    }
-    .ul_footer{
-        width: 100%;
-        height: 100%;
-    }
-    .icone_nome, .icone_cidade, .icone_celular, .icone_email, .icone_github, .icone_linkedin{
-        width: 4vw;
-        height: 4vh;
-        margin: 15px 0 0 15px;
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .foto_perfil{
-        width:30%;
-        height: 60%;
-    }
-    
-    .section_dados_principal{
-        width: 90vw;
-        height: 55vh;    
+  
+    .redes_sociais {
+      font-size: 20px;
     }
 
-    .div_titulo_objetivo_profissional{
-        width: 100%;
-        height: 45%;  
+  }
+  @media (max-width: 600px) {
+    .atividades_container {
+      flex-direction: column;
+      align-items: center;
     }
-    .div_dados_foto_objetivo{
-        width: 90vw;
-        height: 40vh;
+  
+    .atividade_card {
+      max-width: 90%;
     }
-    .div_sobremim{
-        width: 90vw;
-        height: 40vh;
-    }
-    .paragrafo_objetivo, .p_sobremim{
-        font-size: 2vh;
-        margin-right: 15px;
-
-    }
-    .h1_dados{
-        width: 30%;
-        height: 40%;  /*1.71*/
-    }
-    .objetivo_profissional{
-        width: 70%;
-        height: 55%;
-    }
-    .section_conhecimentos{
-        width: 90vw;
-        height: 140vh;
-    }
-    .container_div_conhecimentos{
-        width: 90vw;
-        height: 100vh;
-    }
-    .div_formacao_academica, .div_experiencias_profissionais,  .div_habilidades, .div_idiomas, .div_cursos{
-        width: 42vw;
-        height: 45vh;     
-    }
-    .h2_formacao{
-        font-size: 1.5vh;
-    }
-    .hr_verde{
-        width: 2vw;
-        height: 0.5vh;
-        background-color: rgb(1, 198, 1);
-        margin: 0 0 0 15px;
-        border: 0;
-        border-radius: 5px;
-    }
-    .hr_cinza{
-        width: 2vw;
-        height: 0.5vh;
-        background-color: #c3c3c3;
-        margin: 0 0 0 15px;
-        border: 0;
-        border-radius: 5px;
-    
-    }
-    .img_habilidades, .img_idiomas{
-        width: 25px;
-        height: 25px;
-    }
-    .section_atividades{
-        width: 95vw;
-        display: flex;
-        align-items: center;
-    }
-    .lista_ensino{
-        font-size: 15px;
-    }
-    .paragrafo_formacao{
-        font-size: 14px;
-    }
-    .paragrafo_formacao_nome{
-        font-size: 14px;
-    }
-    .div_titulo_atividades{
-        display: inline-flex;
-        width: 70%;
-        height: 20%;
-        justify-content: center;
+    .footer_content {
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        
-    }
-    .teste{
-        width: 45%;
-    }
-    .imagem_dos_projetos{
-        width: 50%;
-        height: 70%;
-    }
-    .titulo_projetos{
-        font-size: 1.8vh;
-    }
-    .footer{
-        height: 5vh;
-    }
-    .div_ul_footer{
-        width: 40%;
-    }
-    .div_ul{
-        width: 50%;
-        height: 50%;
-    }
-    .ul_footer{
-        width: 100%;
-    }
-    .icone_nome, .icone_cidade, .icone_celular, .icone_email, .icone_github, .icone_linkedin{
-        width: 3.5vw;
-        height: 3.5vh;
-        margin: 15px 0 0 15px;
-    }
-}
+      }
+      
 
-@media only screen and (max-width: 480px) {
-    .foto_perfil{
-        width:40%;
-        height: 60%;
-    }
-    
-    .section_dados_principal{
-        width: 100vw;
-        height: 60vh;    
-    }
-
-    .div_titulo_objetivo_profissional{
-        width: 100%;
-        height: 45%;  
-    }
-    .div_dados_foto_objetivo{
-        width: 100vw;
-        height: 40vh;
-    }
-    .div_sobremim{
-        width: 100vw;
-        height: 40vh;
-    }
-    .paragrafo_objetivo, .p_sobremim{
-        font-size: 2vh;
-        margin-right: 15px;
-
-    }
-    .h1_dados{
-        width: 30%;
-        height: 40%;  /*1.71*/
-    }
-    .objetivo_profissional{
-        width: 70%;
-        height: 55%;
-    }
-    .section_conhecimentos{
-        width: 100vw;
-        height: 140vh;
-        display: flex;
-        justify-content: center;
-    }
-    .container_div_conhecimentos{
-        width: 100vw;
-        height: 100vh;
-    }
-    .div_formacao_academica, .div_experiencias_profissionais,  .div_habilidades, .div_idiomas, .div_cursos{
-        width: 47vw;
-        height: 45vh;     
-    }
-    .h2_formacao{
-        font-size: 1.5vh;
-    }
-    .hr_verde{
-        width: 2vw;
-        height: 0.5vh;
-        background-color: rgb(1, 198, 1);
-        margin: 0 0 0 15px;
-        border: 0;
-        border-radius: 5px;
-    }
-    .hr_cinza{
-        width: 2vw;
-        height: 0.5vh;
-        background-color: #c3c3c3;
-        margin: 0 0 0 15px;
-        border: 0;
-        border-radius: 5px;
-    
-    }
-    .img_habilidades, .img_idiomas{
-        width: 25px;
-        height: 25px;
-    }
-    .section_atividades{
-        width: 100vw;
-        display: flex;
-        align-items: center;
-    }
-    .lista_ensino{
-        font-size: 15px;
-    }
-    .paragrafo_formacao{
-        font-size: 14px;
-    }
-    .paragrafo_formacao_nome{
-        font-size: 14px;
-    }
-    .div_titulo_atividades{
-        display: inline-flex;
-        width: 70%;
-        height: 20%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-    }
-    .teste{
-        width: 45%;
-    }
-    .imagem_dos_projetos{
-        width: 60%;
-        height: 60%;
-    }
-    .titulo_projetos{
-        font-size: 1.3vh;
-    }
-    .footer{
-        height: 5vh;
-    }
-    .div_ul_footer{
-        width: 40%;
-    }
-    .div_ul{
-        width: 50%;
-        height: 50%;
-    }
-    .ul_footer{
-        width: 100%;
-    }
-    .icone_nome, .icone_cidade, .icone_celular, .icone_email, .icone_github, .icone_linkedin{
-        width: 30px;
-        height: 30px;
-        margin: 15px 0 0 15px;
-    }
-    .div_dados_foto_objetivo{
-        border-radius: 0px;
-    }
-    .texto_back{
-        font-size: 20px;
-    }
-
-    @media only screen and (max-width: 300px) {
-        .section_dados_principal{
-            height: 85vh;
-        }
-        .div_dados_foto_objetivo{
-            flex-direction: column;
-            align-items: center;
-        }
-        .h1_dados{
-            height: 55%;
-        }
-        .div_formacao_academica, .div_experiencias_profissionais,  .div_habilidades, .div_idiomas, .div_cursos{
-            width: 90vw;
-            height: 45vh;     
-        }
-        .section_conhecimentos{
-            height: 230vh;
-        }
-        .h2_formacao {
-            font-size: 1.8vh;
-        }
-        .lista_ensino{
-            font-size: 18px;
-        }
-        .paragrafo_formacao{
-            font-size: 16px;
-        }
-        .hr_verde{
-            width: 20px;
-            height: 6px;
-            background-color: rgb(1, 198, 1);
-            margin: 0 0 0 15px;
-            border: 0;
-            border-radius: 5px;
-        }
-        .hr_cinza{
-            width: 20px;
-            height: 6px;
-            background-color: #c3c3c3;
-            margin: 0 0 0 15px;
-            border: 0;
-            border-radius: 5px;
-        
-        }
-        .img_habilidades, .img_idiomas{
-            width: 35px;
-            height: 35px;
-        }
-        .section_atividades{
-            width: 140vw;
-            display: flex;
-            align-items: center;
-        }
-        .projetos_parte1{
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        .projetos_parte2{
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        .teste{
-            width: 60%;
-            height: 50%;
-        }
-        .imagem_dos_projetos{
-            width: 70%;
-            height: 70%;
-        }
-        .titulo_projetos{
-            font-size: 1.3vh;
-        }
-        .div_ul{
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-        .ul_footer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
-        .icone_nome, .icone_cidade, .icone_celular, .icone_email, .icone_github, .icone_linkedin{
-            width: 30px;
-            height: 30px;
-            margin: 15px 0 0 15px;
-        }
-        .texto_back{
-            font-size: 16px;
-        }
-        .div_icn_back{
-            width: 100%;
-            height: 20%;
-        }
-    }
-}
+  }
