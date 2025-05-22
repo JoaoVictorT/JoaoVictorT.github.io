@@ -56,6 +56,7 @@ a, a:visited, a:active{
   color: #222;
 }
 
+
 .titulo_dados_secundario {
   font-size: 2rem;
   text-align: center;
@@ -113,6 +114,7 @@ a, a:visited, a:active{
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
   }
+ 
   
   .section_atividades_cards h2{
     font-size: 2rem;
@@ -145,11 +147,10 @@ a, a:visited, a:active{
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     padding: 20px;
-    flex: 1 1 250px;
     max-width: 280px;
     transition: transform 0.3s ease;
   }
-  
+
   .atividade_card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0,0,0,0.15);
@@ -234,6 +235,7 @@ a, a:visited, a:active{
       font-size: 20px;
     }
 
+
   }
   @media (max-width: 600px) {
     .atividades_container {
@@ -241,8 +243,8 @@ a, a:visited, a:active{
       align-items: center;
     }
   
-    .atividade_card {
-      max-width: 90%;
+    .atividade_card, .dados_secundario_card  {
+      max-width: 60%;
     }
     .footer_content {
         flex-direction: column;
